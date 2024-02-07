@@ -13,7 +13,7 @@ const client = new Discord.Client({
 });
 
 const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: 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,
 });
 
 const openai = new OpenAIApi(configuration);
@@ -22,14 +22,14 @@ const sleep = (ms) => {
     return new Promise((r) => setTimeout(r, ms));
 }
 
-if (process.env.DISCORD_BOT_TOKEN == null) {
+if (OTM0MDAyMDc5NTY2MDMyOTI2.GhRg5v.hObCLOa9Wa6iMwn_7pzuyv9OeKjoCg9lFNge9g == null) {
     console.log("An discord token is empty.");
     sleep(60000).then(() => console.log("Service is getting stopped automatically"));
 }
 
 const discordLogin = async () => {
     try {
-        await client.login(process.env.DISCORD_BOT_TOKEN);
+        await client.login(OTM0MDAyMDc5NTY2MDMyOTI2.GhRg5v.hObCLOa9Wa6iMwn_7pzuyv9OeKjoCg9lFNge9g);
     } catch (TOKEN_INVALID) {
         console.log("An invalid token was provided");
         sleep(60000).then(() => console.log("Service is getting stopped automatically"));
